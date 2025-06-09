@@ -1,15 +1,12 @@
-public class Main2
+public class Main
 {
-	public static void main(String[] args) {
-	    Scanner sc=new Scanner(System.in);
-	    int[]a=new int[5];
-	    for(int i=0;i<a.length;i++){
-	        a[i]=sc.nextInt();
-	    }
-	    for(int i=0;i<a.length;i++){
-	        if(a[i]%2==0){
-		System.out.println(a[i]);
-	}
+public void fun(int n){
+    if(n==11) return;
+    System.out.println(n);
+    fun(n+1);
 }
+public static void main(String[] args){
+Main m=new Main();
+m.fun(1);
 }
 }
